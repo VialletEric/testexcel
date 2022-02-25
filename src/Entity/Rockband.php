@@ -62,6 +62,11 @@ class Rockband
      */
     private $presentation;
 
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $attachementFilename;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -171,6 +176,27 @@ class Rockband
     public function setPresentation(string $presentation): self
     {
         $this->presentation = $presentation;
+
+        return $this;
+    }
+
+
+    /**
+     * Get the value of attachementFilename
+     */ 
+    public function getAttachementFilename()
+    {
+        return $this->attachementFilename;
+    }
+
+    /**
+     * Set the value of attachementFilename
+     *
+     * @return  self
+     */ 
+    public function setAttachementFilename($attachementFilename)
+    {
+        $this->attachementFilename = $attachementFilename;
 
         return $this;
     }
