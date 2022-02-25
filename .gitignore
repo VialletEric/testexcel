@@ -30,7 +30,6 @@
 !bin/console
 !bin/symfony_requirements
 /vendor/
-/.env.local
 
 # Assets and user uploads
 /web/bundles/
@@ -51,3 +50,13 @@
 
 # Embedded web-server pid file
 /.web-server-pid
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
